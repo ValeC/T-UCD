@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<methods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="generalMethod_Type.xsd">
+    <persona>
+        <creation_file>
+            <creator_name>creator_name0</creator_name>
+            <file_name>file_name0</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Persona</method_name>
+            <method_phase>User Research</method_phase>
+            <icon>fa fa-user fa-2x</icon>
+            <tutorial>
+                <description> Personas are fictive descriptions of a hypothetical actual end-user and their purpose is to embody the key end-users of a product during the entire design process. Personas are created from previous studies of potential actual end-users (based on interviews, observation, surveys and so on). They "are only as good as the research behind them": qualitative research should have high priority. Generally, the elements of a persona are the biography (name, age, user group, education, personality), the goals he/she has, and his/her professional, health and technological status. "Although they are imaginary, they are defined with significant rigor and precision". To make the persona more realistic, names and personal details are fictional while the rest is "based on qualitative and some quantitative user research". Even though "it sounds trivial [...] it is tremendously powerful and effective in every case".</description>
+                <benefits>
+                    <benefit>makes the users seem more real, helps designers to be empathic and keeps realistic ideas of users </benefit>
+                    <benefit>increases the focus on users and their needs,</benefit>
+                    <benefit>has direct design influence because it leads to better design decisions and defines the product’s feature set </benefit>
+                    <benefit>can provide a return of investment on up to four times</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>“develop one or more personas for a project but limit yourself to the main” users. “For any given project, creating only three or four personas is best.”</best_practice>
+                    <best_practice>give the persona a name, as “[a] persona without a name is simply not useful”. (p.128) During the design process the persona is referred to by name rather than “the user + photo or  sketched caricature. All these details serve to make that persona a concrete person in the designer’s mind and in the minds of the design team </best_practice>
+                    <best_practice>“successful personas and persona efforts are built progressively” as it happens in actual life when people get to know each other . So, the descriptions should be evaluated and updated at regular intervals  in order to develop “a relationship with them”</best_practice>
+                    <best_practice>Personas are just a generalisation of a user in a certain end-user group</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://www.usability.gov/how-to-and-tools/methods/personas.html</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes0</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <general_info>
+            <persona_priority>High (Primary Persona)</persona_priority>
+            <user_group>user_group0</user_group>
+            <fictional_name>fictional_name0</fictional_name>
+            <age>50</age>
+            <sex>Female</sex>
+            <photo>http://www.oxygenxml.com/</photo>
+        </general_info>
+        <biography>
+            <marital_status>marital_status0</marital_status>
+            <family_status>family_status0</family_status>
+            <education>education0</education>
+            <personality>personality0</personality>
+            <hobbies>hobbies0</hobbies>
+            <personal_goals>personal_goals0</personal_goals>
+        </biography>
+        <professional_status>
+            <job_title>job_title0</job_title>
+            <work_experience>work_experience0</work_experience>
+            <current_work>current_work0</current_work>
+            <tasks_responsabilities>tasks_responsabilities0</tasks_responsabilities>
+            <professional_goals>professional_goals0</professional_goals>
+        </professional_status>
+        <health>health0</health>
+        <technology>technology0</technology>
+        <user_needs>user_needs0</user_needs>
+    </persona>
+    <thinkAloudEv>
+        <creation_file>
+            <creator_name>Usability Evaluation</creator_name>
+            <file_name>file_name1</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Usability evaluation</method_name>
+            <method_phase>Evaluation</method_phase>
+            <icon>fa fa-laptop fa-2x</icon>
+            <tutorial>
+                <description>description1</description>
+                <benefits>
+                    <benefit>benefit0</benefit>
+                    <benefit>benefit1</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>best_practice0</best_practice>
+                    <best_practice>best_practice1</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://www.oxygenxml.com/</example>
+                    <example>http://www.oxygenxml.com/</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes1</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <evaluation_description>
+            <users>
+                <users_evaluation_number>50</users_evaluation_number>
+                <users_evaluation_group>users_evaluation_group0</users_evaluation_group>
+                <users_expected_skills_knowledge>users_expected_skills_knowledge0</users_expected_skills_knowledge>
+            </users>
+            <users>
+                <users_evaluation_number>50</users_evaluation_number>
+                <users_evaluation_group>users_evaluation_group1</users_evaluation_group>
+                <users_expected_skills_knowledge>users_expected_skills_knowledge1</users_expected_skills_knowledge>
+            </users>
+            <objective>objective0</objective>
+            <methodology_evaluation>
+                <place>place0</place>
+                <procedure>procedure0</procedure>
+                <training>training0</training>
+                <material>material0</material>
+            </methodology_evaluation>
+            <methodology_evaluation>
+                <place>place1</place>
+                <procedure>procedure1</procedure>
+                <training>training1</training>
+                <material>material1</material>
+            </methodology_evaluation>
+            <user_task>user_task0</user_task>
+            <user_task>user_task1</user_task>
+            <prototype>
+                <prototype_name>prototype_name0</prototype_name>
+                <attachments>http://www.oxygenxml.com/</attachments>
+            </prototype>
+            <prototype>
+                <prototype_name>prototype_name1</prototype_name>
+                <attachments>http://www.oxygenxml.com/</attachments>
+            </prototype>
+        </evaluation_description>
+        <results>
+            <findings>findings0</findings>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recommendations>
+                <recommendations_high>recommendations_high0</recommendations_high>
+                <recommendations_medium>recommendations_medium0</recommendations_medium>
+                <recommendations_low>recommendations_low0</recommendations_low>
+            </recommendations>
+        </results>
+    </thinkAloudEv>
+    <scenario>
+        <creation_file>
+            <creator_name>creator_name2</creator_name>
+            <file_name>file_name2</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Scenario</method_name>
+            <method_phase>User Research</method_phase>
+            <icon>fa fa-file-text-o fa-2x</icon>
+            <tutorial>
+                <description>description2</description>
+                <benefits>
+                    <benefit>benefit0</benefit>
+                    <benefit>benefit1</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>best_practice0</best_practice>
+                    <best_practice>best_practice1</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://www.oxygenxml.com/</example>
+                    <example>http://www.oxygenxml.com/</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes2</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <scenario_description>scenario_description0</scenario_description>
+    </scenario>
+    <sketch>
+        <creation_file>
+            <creator_name>creator_name3</creator_name>
+            <file_name>file_name3</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Sketch</method_name>
+            <method_phase>Prototyping</method_phase>
+            <icon>fa fa-edit fa-2x</icon>
+            <tutorial>
+                <description>Sketch, which belongs to the low-fidelity prototype group, is a paper-based prototype usually created by hand. It is used to sketch interaction designs and interfaces. It allows to easily suggest, explore, trigger questions, propose, make attempts without fearing, as it is not definitive.</description>
+                <benefits>
+                    <benefit>easier to talk on something that is visual and concrete instead of more abstract concepts</benefit>
+                    <benefit>gives a first look and feel of the interface</benefit>
+                    <benefit>helps the designer to drawn down her/his own ideas</benefit>
+                    <benefit>means of communication among designers, between designers and users and between designers and stakeholder: it helps discussion regarding what users and stakeholders want and need from the future system</benefit>
+                    <benefit>represents and helps to explore design ideas, screen layouts and design alternatives in order to make decisions and develop the best design</benefit>
+                    <benefit>it is not a detailed interface, but there is just enough elements to have an idea on how it would work</benefit>
+                    <benefit>Potential usability problems can be detected at a very early stage in the design process before any code has been written. </benefit>
+                    <benefit>Paper prototypes are cheap and quick to build / refine, thus enabling rapid design iterations. </benefit>
+                    <benefit>Only minimal resources and materials are required</benefit>
+                    <benefit>Heaton  believes that rapid prototyping should solve 80% of the major interface problems</benefit>
+                    <benefit>It gives the opportunity to the users to have ideas of what is possible to do</benefit>
+                    <benefit>BUT detecting errors is limited</benefit>
+                    <benefit>BUT not detailed enough for development</benefit>
+                    <benefit>BUT simulation of navigation and flow is limited </benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>use them a lot and mostly in the early stage of the development</best_practice>
+                    <best_practice>don’t stuck on details</best_practice>
+                    <best_practice>focus on representing the most common tasks, leave the less important for later</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://www.nngroup.com/reports/paper-prototyping-training-video/</example>
+                    <example>http://blogs.balsamiq.com/ux/category/process/</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes3</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+    </sketch>
+    <observation>
+        <creation_file>
+            <creator_name>creator_name4</creator_name>
+            <file_name>file_name4</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Observation</method_name>
+            <method_phase>User Research</method_phase>
+            <icon>fa fa-eye fa-2x</icon>
+            <tutorial>
+                <description>This method consists in observing the target user of the future system in their natural workplace or home in order to find out how they work, which are their tasks and their environment. Observation is essential especially during the user research phase but also in a later stage when the system is actually used. It mainly allows collecting qualitative data by the observer that takes notes and/or audio-/video- records the activities focusing on aspects that are interesting for the design process. The observation can be direct (the observer is actually present in the user environment) or indirect (the users, their tasks and environment are videorecorded).</description>
+                <benefits>
+                    <benefit>DIRECT OBSERVATION</benefit>
+                    <benefit>gives the investigator a rapid insight of the user, his/her tasks and his/her environment</benefit>
+                    <benefit>allows to focus the attention on specific aspects</benefit>
+                    <benefit>produces always interesting data</benefit>
+                    <benefit>it is always worth doing it</benefit>
+                    <benefit>it is cheaper than indirect observation</benefit>
+                    <benefit>BUT even if the investigator takes notes, it is difficult to have a complete vision of the user activity by observing it only once</benefit>
+                    <benefit>BUT there is no opportunity to reconsider the decision of the observer about what he/she evaluated as more or less important</benefit>
+                    <benefit>BUT it is considered quite obtrusive and could change the natural behaviour and performance of the users</benefit>
+                    <benefit>INDIRECT OBSERVATION</benefit>
+                    <benefit>the observations are recorded permanently and thus it is possible to review it</benefit>
+                    <benefit>there is more distance between the observer and the users, meaning more objectivity</benefit>
+                    <benefit>it records activities that may be missed if performing indirect observation </benefit>
+                    <benefit>BUT a large amount of data meaning long time to analyse them</benefit>
+                    <benefit>BUT users will be aware that someone is recording them and this can change their behaviour</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>In order to perform a good observation session, it is advisable to plan it properly before actually running it and clearly report the findings after having run it.</best_practice>
+                    <best_practice>PLANNING</best_practice>
+                    <best_practice>Establish objectives and information requirements. Should the coverage be in breadth or in depth? It is extremely important to decide what will happen to the end-product of this process, and to tailor the whole process to the requirements of those who will receive the results</best_practice>
+                    <best_practice>Gain co-operation of contacts with the observation technique that you intend to carry out. Establish the times, places, and people who will be observed. Note that in some countries the law may prohibit you from taking video films of people without their explicit written consent.</best_practice>
+                    <best_practice>Decide on the recording technique you will use. Will you rely on hand-written notes (traditional), audio, or video and audio records? Note that the more complete your record, the longer it takes to analyse. It is useful to be able to make some kind of first-cut analysis during observation.</best_practice>
+                    <best_practice>WHEN INDIRECT OBSERVATION</best_practice>
+                    <best_practice>leave the recording equipment some days before starting to record in order to make the users accustomed to the camera</best_practice>
+                    <best_practice>decide how and when start and stop recording</best_practice>
+                    <best_practice>label recording in order to catalog it, where to locate the equipment</best_practice>
+                    <best_practice>RUNNING</best_practice>
+                    <best_practice>Make sure that those being observed are aware of the reason for your study and that they do not see you in negative terms. This is particularly important for mentally impaired and blind users who may be disturbed by a passive presence that they are not sure about.</best_practice>
+                    <best_practice>Run a pilot observation session to get a feel for what to expect and to test out any observation sheets. This will also help to judge how long the observation session needs to be. If the session involves informal activities with the general public, they may wish to converse with the observer. Make sure that there is enough time for this.</best_practice>
+                    <best_practice>Try to be as unobtrusive as possible. Do not let yourself or your equipment get in the way.</best_practice>
+                    <best_practice>Note down any events that you do not understand and try to clarify them with the user as soon as the session is completed.</best_practice>
+                    <best_practice>Try to be aware of the range of influences that are affecting the user.</best_practice>
+                    <best_practice>If possible photograph the users work area or the area of operation as this will act as a reminder of the environmental context.</best_practice>
+                    <best_practice>After your observations, write down your first impressions before the analysis stage later on.</best_practice>
+                    <best_practice>REPORTING</best_practice>
+                    <best_practice>Analyse, summarise, and report in relation to the objectives set out at the start.</best_practice>
+                </best_practices>
+                <examples>
+                    <example></example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes4</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <objective>objective1</objective>
+        <participants>
+            <participants_number>50</participants_number>
+            <participants_group>participants_group0</participants_group>
+        </participants>
+        <methodology>
+            <place>place2</place>
+            <procedure>procedure2</procedure>
+            <recording>Written notes</recording>
+        </methodology>
+        <results>
+            <findings>findings1</findings>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recommendations>
+                <recommendations_high>recommendations_high1</recommendations_high>
+                <recommendations_medium>recommendations_medium1</recommendations_medium>
+                <recommendations_low>recommendations_low1</recommendations_low>
+            </recommendations>
+        </results>
+    </observation>
+    <interview>
+        <creation_file>
+            <creator_name>creator_name5</creator_name>
+            <file_name>file_name5</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Interview</method_name>
+            <method_phase>User Research</method_phase>
+            <icon>fa fa-microphone fa-2x</icon>
+            <tutorial>
+                <description>Interviewing the potential user of the future system is a method to gather information quickly and friendly in order to acquire a deeper understanding of them: facts, attitudes, beliefs, desires and experiences. Generally, it is composed by an interviewer and one informant at a time and can be conducted face-to-face, by phone, videoconference or via instant messaging system (gov).</description>
+                <benefits>
+                    <benefit>the interviewee has the full attention of the interviewer so that:</benefit>
+                    <benefit>the discussion can be adapted at any time : explore more or less in deep a topic, change topic,….</benefit>
+                    <benefit>mistakes and misunderstandings can be quickly identified and cleared up</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>It is important to keep in mind from the beginning that interviewing requires practice and experience. Indeed, it would be appropriate to hire an experienced practitioner at the beginning.</best_practice>
+                    <best_practice>PLAN interviews carefully by deciding in advance:</best_practice>
+                    <best_practice>a.   who to interview: select the representative participants</best_practice>
+                    <best_practice>b.   what you want to learn</best_practice>
+                    <best_practice>c.   what questions to ask to gather the relevant information</best_practice>
+                    <best_practice>d.   how long the interviews should be</best_practice>
+                    <best_practice>e.   prepare an interview schedule</best_practice>
+                    <best_practice>f.   try the interview at least once and make sure to know well the schedule</best_practice>
+                    <best_practice>DURING the interview:</best_practice>
+                    <best_practice>a.   make interviewee feel comfortable</best_practice>
+                    <best_practice>b.   ask questions in a neutral manner, listen well and be analytical</best_practice>
+                    <best_practice>c.   create friendly atmosphere by being casual yourself but don’t forget to keep control of the discussion by directing it toward the information you want to obtain </best_practice>
+                    <best_practice>d.   audio or video record the interview (remember to ask permission to the user) because if you rely only on the notes, they are likely to be incomplete and important information can be missed. The disadvantage of recording it is that users can change their behaviour at the beginning.</best_practice>
+
+                    <best_practice>There are two main types of interview: STRUCTURED and UNSTRUCTURED.</best_practice>
+                    <best_practice>1.   Structured: characterised by predetermined questions and let little space for expanding the topics. </best_practice>
+                    <best_practice>2.   Unstructured: main topics are set and can be discussed and explored. Big topics should be broken into sub-topics. This type of interview is more informal and generally is useful early in the design process to gather requirements.</best_practice>
+                    <best_practice>The less the interview is structured, the easier is to find relevant issues and rich information. However, such interviews can provide so much information that could be harder to analyse later. To solve this problem, an efficient method of analysis is to break up the discussion of the interviewee into simple sub-topics.</best_practice>
+                    <best_practice>The interview is usually composed of FOUR phases:</best_practice>
+                    <best_practice>1.   Introduction: the warm-up part where the interviewer and interviewee introduce themselves.</best_practice>
+                    <best_practice>2.   The “energising” phase where the topic is presented.</best_practice>
+                    <best_practice>3.   The “body” of the interview is the main phase where the interviewer asks questions to the interviewee. Before this phase ends, make sure that all the relevant information needed have been covered.</best_practice>
+                    <best_practice>4.   The "closing" phase. At this time, the interviewer summarises what he has learned during the interview by checking with the interviewee if all is correct, if it has been covered all the areas and if something is missed. Moreover, a good practice is also to ask to the interviewee if there is something to improve for the next interview.</best_practice>
+                </best_practices>
+                <examples>
+                    <example></example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes5</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <objective>objective2</objective>
+        <participants>
+            <participants_number>50</participants_number>
+            <participants_group>participants_group1</participants_group>
+        </participants>
+        <methodology>
+            <place>place3</place>
+            <procedure>procedure3</procedure>
+            <recording>Written notes</recording>
+        </methodology>
+        <results>
+            <findings>findings2</findings>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recommendations>
+                <recommendations_high>recommendations_high2</recommendations_high>
+                <recommendations_medium>recommendations_medium2</recommendations_medium>
+                <recommendations_low>recommendations_low2</recommendations_low>
+            </recommendations>
+        </results>
+        <questions>http://www.oxygenxml.com/</questions>
+    </interview>
+    <survey>
+        <creation_file>
+            <creator_name>creator_name6</creator_name>
+            <file_name>file_name6</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Survey</method_name>
+            <method_phase>User Research</method_phase>
+            <icon>fa fa-pencil-square-o fa-2x</icon>
+            <tutorial>
+                <description>Surveys are mainly used to gather information of the users (who they are and how they will use the future system). In order to reach this purpose, unambiguous questions and statements are prepared. They are often analysed statistically. They can be sent by hand, by post, online and by e-mail.</description>
+                <benefits>
+                    <benefit>Effective source of information to better understand the users in order to design better systems and avoid the risk of bad design</benefit>
+                    <benefit>can reach a large number of people</benefit>
+                    <benefit>useful only if they provide answers to questions raised by design team</benefit>
+                    <benefit>can quantify concepts</benefit>
+                    <benefit>“Providing stakeholders with confidence that a design is, or will be effective. Gathering larger sample sizes, in comparison to qualitative research, often speaks the language of business stakeholders. Whether we like it or not, there is often a perception when it comes to research that more is more” </benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>1. Creation of the survey</best_practice>
+                    <best_practice>find out the what are the most important points such as</best_practice>
+                    <best_practice>decision points </best_practice>
+                    <best_practice>uncertainties in the design team by thinking of the usage of the product  </best_practice>
+                    <best_practice>needs to be discovered</best_practice>
+                    <best_practice>involve decision makers</best_practice>
+                    <best_practice>decide how it will be analysed at the end</best_practice>
+                    <best_practice>analyse the product context of use to detect the uncertain and problematic aspects</best_practice>
+                    <best_practice>test it with some potential survey users by creating survey condition as closer as possible</best_practice>
+                    <best_practice>There are TWO different types of question structure: OPEN and CLOSED.</best_practice>
+                    <best_practice>CLOSED QUESTIONS: the respondent can answer the question by choosing predefined options. </best_practice>
+                    <best_practice>Examples of such questions are:</best_practice>
+                    <best_practice>simple checklists: ex. “yes”, “no”, “I don’t know” </best_practice>
+                    <best_practice>rating scale: the extremities are semantically opposite words such as “very important” and “very useless”</best_practice>
+                    <best_practice>Likert scale: a scale with semantically similar words that when analysed shows a user’s attitude, example: “Always”, “Sometimes”, “Every Once in a While”, “Rarely”, “Never”</best_practice>
+                    <best_practice>Closed questions are easy to analyse as it should only count the number of response of each option.</best_practice>
+                    <best_practice>OPEN QUESTIONS: the respondent is more free to answer these type of questions. They typically begin with “What do you…”, “How do you…” or “What ways…”.</best_practice>
+                    <best_practice>A good practice for these questions is to limit the space of answer so that respondents will tend to prioritize their answers.</best_practice>
+                    <best_practice>Open questions are used when there are not predetermined answers. They will provide richer data in terms of contents and quantity. In fact, the analysis will take more time as each answers need to be read, grouped and classified.</best_practice>
+                    <best_practice>Generally, an effective survey contains open and closed questions</best_practice>
+                    <best_practice>Provide the participant with an estimate of completion time up front, as well as something that indicates their progress</best_practice>
+                    <best_practice>TEST THE SURVEY</best_practice>
+                    <best_practice>guarantee that the survey  </best_practice>
+                    <best_practice>is well designed and follow a logical flow</best_practice>
+                    <best_practice>has simple and few questions (no more than two sides of a page)</best_practice>
+                    <best_practice>is comprehensible for a large group of people (clear and unambiguous questions as nobody will help them at the time they will compile it)</best_practice>
+                    <best_practice>is not boring (avoid impertinent and complicated questions)</best_practice>
+                    <best_practice>will gather the information you are looking for</best_practice>
+                    <best_practice>includes “other” or “comments” to give the possibility to the users to add some more information the survey didn’t ask</best_practice>
+                    <best_practice>CONDUCT THE SURVEY</best_practice>
+                    <best_practice>send the survey to individuals people by naming their role (ex. Manager, director, secretary and so on) rather than anonymously</best_practice>
+                    <best_practice>reward to respondent is also a good incentive to obtain more participants</best_practice>
+                    <best_practice>RESULT</best_practice>
+                    <best_practice>analyse data should be as automatic as possible</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://www.oxygenxml.com/</example>
+                    <example>http://www.oxygenxml.com/</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes6</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <objective>objective3</objective>
+        <participants>
+            <participants_number>50</participants_number>
+            <participants_group>participants_group2</participants_group>
+        </participants>
+        <methodology>
+            <place>place4</place>
+            <procedure>procedure4</procedure>
+            <recording>Written notes</recording>
+        </methodology>
+        <results>
+            <findings>findings3</findings>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recorded_file>http://www.oxygenxml.com/</recorded_file>
+            <recommendations>
+                <recommendations_high>recommendations_high3</recommendations_high>
+                <recommendations_medium>recommendations_medium3</recommendations_medium>
+                <recommendations_low>recommendations_low3</recommendations_low>
+            </recommendations>
+        </results>
+        <questions>http://www.oxygenxml.com/</questions>
+    </survey>
+    <storyboard>
+        <creation_file>
+            <creator_name>creator_name7</creator_name>
+            <file_name>file_name7</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Storyboard</method_name>
+            <method_phase>Prototyping</method_phase>
+            <icon>fa fa-th fa-2x</icon>
+            <tutorial>
+                <description>A storyboard is a sequence of sketches or screen layouts. Usually, it is a translation from a written scenario into a visual illustration. In a storyboard, it is showed how users would interact with an application or interface when undertaking a specific task and how the system functions would react. The level of details varies depending on the development stage of the lifecycle: the more it is advanced, the more details are represented.</description>
+                <benefits>
+                    <benefit>Provides an overview of the system and allows to organize ideas to designers</benefit>
+                    <benefit>Allow means of communication between users, stakeholders and designers</benefit>
+                    <benefit>Demonstrates the functionality of the system and navigation scheme</benefit>
+                    <benefit>Can evaluate design ideas and alternatives</benefit>
+                    <benefit>Can be evaluated by users to obtain early feedback</benefit>
+                    <benefit>It is cheap</benefit>
+                    <benefit>Allows rapid and iterative development</benefit>
+                    <benefit>BUT checking errors in storyboards is limited</benefit>
+                    <benefit>BUT it may be harder for programmers to code as the storyboard is not so detailed</benefit>
+                    <benefit>BUT paper UI could be less convincing</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>Use scenarios as input</best_practice>
+                    <best_practice>Brainstorm ideas, this may include lists, charts, doodles, and quick notes</best_practice>
+                    <best_practice>Select the best ideas: re-consider the project requirements, time and resource constraints, the target audience and end users. Select the top ideas and try to get feedback from others involved.</best_practice>
+                    <best_practice>Sketch each screen and describe any pictures, images, animations, sound, music, video or text.</best_practice>
+                </best_practices>
+                <examples>
+                    <example>hhttp://msdn.microsoft.com/en-us/library/windows/desktop/ff800706.aspx</example>
+                    <example>http://uxmag.com/articles/book-excerpt-the-user-experience-team-of-one</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes7</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+    </storyboard>
+    <mhfidelity>
+        <creation_file>
+            <creator_name>creator_name8</creator_name>
+            <file_name>file_name8</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>High-fidelity prototyping</method_name>
+            <method_phase>Prototyping</method_phase>
+            <icon>fa fa-hand-o-up fa-2x</icon>
+            <tutorial>
+                <description>A high-fidelity prototype is digitalized: based on computer and created with specific software. Usually it allows the users to interact with it because it simulates the behaviour of the system as if it was coded. For example, if a user clicks on a button, the interactive prototype executes the specific command. </description>
+                <benefits>
+                    <benefit>Complete functionality</benefit>
+                    <benefit>Fully interactive</benefit>
+                    <benefit>It defines clearly the navigational scheme</benefit>
+                    <benefit>Recommended for refining, testing and solving</benefit>
+                    <benefit>It brings a good look and feel of the final product</benefit>
+                    <benefit>Useful when planning to collect user performances (ex. number of errors, time to complete a task…)</benefit>
+                    <benefit>Useful in showing the future system to stakeholders</benefit>
+                    <benefit>living specification for developers</benefit>
+                    <benefit>When it is used for testing, more detailed issues would be found as it is closer to the final system</benefit>
+                    <benefit>BUT expensive and time consuming</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>it should be created it based on previous prototypes and descriptions of use </best_practice>
+                    <best_practice>do not develop three or more high-fidelity prototypes at an early stage: it is a waste of time and sources </best_practice>
+                     <best_practice>consider that to create this kind of prototype is time-consuming and expensive </best_practice>
+                    <best_practice>it requires programming skills of the interface designer</best_practice>
+                    <best_practice>provide a working prototype to programmers in order to reference it when a written specification is unclear and/or they need more details and support them when developing the users’ manuals and help panels</best_practice>
+                    <best_practice>show to public how the system will work before it is fully developed</best_practice>
+                    <best_practice>test with users and stakeholders</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://support.balsamiq.com/customer/portal/articles/107999</example>
+                    <example>http://balsamiq.com/products/mockups/</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes8</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <fidelity_level>
+        </fidelity_level>
+    </mhfidelity>
+    <accessibilityWCAG>
+        <creation_file>
+            <creator_name>creator_name9</creator_name>
+            <file_name>file_name9</file_name>
+            <date_creation>2006-05-04T18:13:51.0</date_creation>
+        </creation_file>
+        <method>
+            <method_name>Accessibility testing</method_name>
+            <method_phase>Evaluation</method_phase>
+            <icon>fa fa-wheelchair fa-2x</icon>
+            <tutorial>
+                <description>description9</description>
+                <benefits>
+                    <benefit>benefit0</benefit>
+                    <benefit>benefit1</benefit>
+                </benefits>
+                <best_practices>
+                    <best_practice>best_practice0</best_practice>
+                    <best_practice>best_practice1</best_practice>
+                </best_practices>
+                <examples>
+                    <example>http://www.oxygenxml.com/</example>
+                    <example>http://www.oxygenxml.com/</example>
+                </examples>
+            </tutorial>
+            <dates_execution>
+                <start_date_execution>2006-05-04T18:13:51.0</start_date_execution>
+                <end_date_execution>2006-05-04T18:13:51.0</end_date_execution>
+            </dates_execution>
+            <others>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <attachments>http://www.oxygenxml.com/</attachments>
+                <notes>notes9</notes>
+                <links>http://www.oxygenxml.com/</links>
+                <links>http://www.oxygenxml.com/</links>
+            </others>
+        </method>
+        <objective>objective4</objective>
+        <prototype>
+            <prototype_name>prototype_name2</prototype_name>
+            <attachments>http://www.oxygenxml.com/</attachments>
+        </prototype>
+        <prototype>
+            <prototype_name>prototype_name3</prototype_name>
+            <attachments>http://www.oxygenxml.com/</attachments>
+        </prototype>
+        <wcag_principles>
+            <principle>
+                <principle_name>Perceivable</principle_name>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments0</comments>
+                </guidelines_properties>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments1</comments>
+                </guidelines_properties>
+            </principle>
+            <principle>
+                <principle_name>Perceivable</principle_name>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments2</comments>
+                </guidelines_properties>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments3</comments>
+                </guidelines_properties>
+            </principle>
+            <principle>
+                <principle_name>Perceivable</principle_name>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments4</comments>
+                </guidelines_properties>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments5</comments>
+                </guidelines_properties>
+            </principle>
+            <principle>
+                <principle_name>Perceivable</principle_name>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments6</comments>
+                </guidelines_properties>
+                <guidelines_properties>
+                    <guideline>Provide text alternatives for non-text content.</guideline>
+                    <checker>false</checker>
+                    <comments>comments7</comments>
+                </guidelines_properties>
+            </principle>
+        </wcag_principles>
+        <recommendations>
+            <recommendations_high>recommendations_high4</recommendations_high>
+            <recommendations_medium>recommendations_medium4</recommendations_medium>
+            <recommendations_low>recommendations_low4</recommendations_low>
+        </recommendations>
+    </accessibilityWCAG>
+</methods>

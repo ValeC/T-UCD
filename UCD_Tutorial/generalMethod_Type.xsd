@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+    
+    <xs:element name="methods">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="persona" />
+                <xs:element ref="thinkAloudEv" />
+                <xs:element ref="scenario" />
+                <xs:element ref="sketch" />
+                <xs:element ref="observation"/>
+                <xs:element ref="interview"/>
+                <xs:element ref="survey"/>
+                <xs:element ref="storyboard"/>
+                <xs:element ref="mhfidelity"/>
+                <xs:element ref="accessibilityWCAG"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+    
+    
+    
+    
+    
+    
+    
+    <!-- GENERAL METHOD TYPE -->
+    
+    <!-- Definition of complex elements -->
+    
+    <xs:group name="generalMethod_Type">
+        <xs:sequence>
+            <xs:element ref="creation_file"/>
+            <xs:element ref="method"/> 
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:element name="creation_file">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="creator_name"/>
+                <xs:element ref="file_name"/>
+                <xs:element ref="date_creation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="method">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="method_name" />
+                <xs:element ref="method_phase" />
+                <xs:element ref="icon"/>
+                <xs:element ref="tutorial" />
+                <xs:element ref="dates_execution"/>
+                <xs:element ref="others"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="tutorial">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="description"/>
+                <xs:element ref="benefits" />
+                <xs:element ref="best_practices"/>
+                <xs:element ref="examples"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="benefits">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="benefit" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="best_practices">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="best_practice" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="examples">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="example" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="dates_execution">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="start_date_execution"/>
+                <xs:element ref="end_date_execution"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    
+    <xs:element name="others">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="attachments" maxOccurs="unbounded"/>
+                <xs:element ref="notes"/>
+                <xs:element ref="links" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+
+    <xs:element name="method_phase">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="User Research"/>
+                <xs:enumeration value="Prototyping"/>
+                <xs:enumeration value="Evaluation"/>
+                <xs:enumeration value="Implementation"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> 
+  
+
+
+    <!-- Definition of simple elements -->
+    
+    <!-- Creation file -->
+    <xs:element name="creator_name" type="xs:string"/>
+    <xs:element name="file_name" type="xs:string"/>
+    <xs:element name="date_creation" type="xs:dateTime"/>
+    
+    <!-- Method -->
+    <xs:element name="method_name" type="xs:string"/>
+    <xs:element name="performer" type="xs:string"/>
+    <xs:element name="start_date_performed" type="xs:dateTime"/>
+    <xs:element name="end_date_performed" type="xs:dateTime"/>
+    <xs:element name="icon" type="xs:string"/>
+
+    
+    <!-- Tutorial -->
+    <xs:element name="description" type="xs:string" />
+    <xs:element name="benefit" type="xs:string"/>
+    <xs:element name="best_practice" type="xs:string"/>
+    <xs:element name="example" type="xs:anyURI"/>
+    
+    
+    
+    <!-- Date execution -->
+    <xs:element name="start_date_execution" type="xs:dateTime" />
+    <xs:element name="end_date_execution" type="xs:dateTime"/>
+    
+    
+    <!-- Others -->
+    <xs:element name="attachments" type="xs:anyURI"/> 
+    <xs:element name="notes" type="xs:string"/>
+    <xs:element name="links" type="xs:anyURI"/>
+    
+    
+    
+    
+    
+    <!-- EVALUATION PHASE TYPE -->
+    
+    
+    <!-- Definition of complex elements -->
+    
+    <xs:group name="evaluationPhase_Type">
+        <xs:sequence>
+            <xs:group ref="generalMethod_Type"/>
+            <xs:element ref="evaluation_description"/>
+            <xs:element ref="results"/> 
+        </xs:sequence>
+    </xs:group>
+    
+    <!-- Definition of complex elements -->
+    
+    <xs:element name="evaluation_description">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="users" maxOccurs="unbounded"/>
+                <xs:element ref="objective"/>
+                <xs:element ref="methodology_evaluation" maxOccurs="unbounded"/>
+                <xs:element ref="user_task" maxOccurs="unbounded"/>
+                <xs:element ref="prototype" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="users">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="users_evaluation_number"/>
+                <xs:element ref="users_evaluation_group"/> 
+                <xs:element ref="users_expected_skills_knowledge"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="methodology_evaluation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="place"/>
+                <xs:element ref="procedure"/>
+                <xs:element ref="training"/>
+                <xs:element ref="material"/>
+                <xs:element ref="recording" minOccurs="0" maxOccurs="3"/>
+               
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="prototype">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="prototype_name"/>
+                <xs:element ref="attachments"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="results">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="findings"/>
+                <xs:element ref="recorded_file" maxOccurs="unbounded"/>
+                <xs:element ref="recommendations"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="recommendations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="recommendations_high"/>
+                <xs:element ref="recommendations_medium"/>
+                <xs:element ref="recommendations_low"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    
+    <!-- Definition of simple elements -->
+    
+    <!-- Users -->
+    <xs:element name="users_evaluation_number" type="xs:positiveInteger" />
+    <xs:element name="users_evaluation_group" type="xs:string" />
+    <xs:element name="users_expected_skills_knowledge" type="xs:string" />
+    
+    
+    <!-- Methodology -->
+    
+    <xs:element name="place" type="xs:string"/>
+    <xs:element name="procedure" type="xs:string"/>
+    <xs:element name="training" type="xs:string"/>
+    <xs:element name="material" type="xs:string"/>
+    <xs:element name="recording">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Written notes"/>
+                <xs:enumeration value="Audio"/>
+                <xs:enumeration value="Video"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> 
+    <xs:element name="recorded_file" type="xs:anyURI"/>
+    
+    
+    
+    <!-- User task -->
+    <xs:element name="user_task" type="xs:string"/>
+    
+    <!-- Prototype -->
+    <xs:element name="prototype_name" type="xs:string"/>
+    
+    <!-- Results -->
+    <xs:element name="findings" type="xs:string"/>   
+    
+    <!-- Recommendations -->
+    <xs:element name="recommendations_high" type="xs:string"/>
+    <xs:element name="recommendations_medium" type="xs:string"/>
+    <xs:element name="recommendations_low" type="xs:string"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- INTERVIEW/SURVEY/OBSERVATION TYPE -->
+    
+
+    
+    <xs:group name="intSurObs_Type">
+        <xs:sequence>
+            <xs:element ref="objective"/>
+            <xs:element ref="participants"/> 
+            <xs:element ref="methodology"/> 
+            <xs:element ref="results"/>
+            <xs:element ref="data_collected" minOccurs="0" maxOccurs="2"/> 
+        </xs:sequence>
+    </xs:group>
+    
+    <!-- Definition of complex elements -->
+    
+    <xs:element name="participants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="participants_number"/>
+                <xs:element ref="participants_group"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="methodology">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="place"/>
+                <xs:element ref="procedure"/>
+                <xs:element ref="recording"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+   
+ 
+    
+    <!-- Definition of simple elements -->
+    
+    <!-- objective -->
+    <xs:element name="objective" type="xs:string"/>
+    
+    <!-- participants -->
+    
+    <xs:element name="participants_number" type="xs:positiveInteger"/>
+    <xs:element name="participants_group" type="xs:string"/>
+    
+    <!-- results -->
+    
+    <xs:element name="data_collected">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Qualitative"/>
+                <xs:enumeration value="Quantitative"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element> 
+    
+    
+    
+
+
+    
+    
+    
+    <!-- METHODS -->
+    
+        <!--START Persona-->
+    
+    
+           <xs:element name="persona" type="personaType"/>
+           
+           
+           
+           <!-- Definition of complex elements -->
+           
+           <xs:complexType name="personaType">
+               <xs:sequence>
+                   <xs:group ref="generalMethod_Type"/>
+                   <xs:element ref="general_info"/>
+                   <xs:element ref="biography"/>
+                   <xs:element ref="professional_status"/>
+                   <xs:element ref="health"/>
+                   <xs:element ref="technology"/>
+                   <xs:element ref="user_needs"/>
+               </xs:sequence>
+           </xs:complexType>
+           
+           <xs:element name="general_info">
+               <xs:complexType>
+                   <xs:sequence>
+                       <xs:element ref="persona_priority"/>
+                       <xs:element ref="user_group"/>
+                       <xs:element ref="fictional_name"/>
+                       <xs:element ref="age"/>
+                       <xs:element ref="sex"/>
+                       <xs:element ref="photo"/>
+                   </xs:sequence>
+               </xs:complexType>
+           </xs:element>
+           
+           <xs:element name="biography">
+               <xs:complexType>
+                   <xs:sequence>
+                       <xs:element ref="marital_status"/>
+                       <xs:element ref="family_status"/>
+                       <xs:element ref="education"/>
+                       <xs:element ref="personality"/>
+                       <xs:element ref="hobbies"/>
+                       <xs:element ref="personal_goals"/>
+                   </xs:sequence>
+               </xs:complexType>
+           </xs:element>
+    
+    
+            <xs:element name="professional_status">
+                 <xs:complexType>
+                     <xs:sequence>
+                         <xs:element ref="job_title"/>
+                         <xs:element ref="work_experience"/>
+                         <xs:element ref="current_work"/>
+                         <xs:element ref="tasks_responsabilities"/>
+                         <xs:element ref="professional_goals"/>
+                     </xs:sequence>
+                 </xs:complexType>
+             </xs:element>
+    
+    
+            
+    
+    
+    
+           
+           <!-- Definition of simple elements -->
+           
+           
+           <!-- general_info -->
+            <xs:element name="persona_priority">
+              <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="High (Primary Persona)"/>
+                        <xs:enumeration value="Medium (Secondary Persona)"/>
+                        <xs:enumeration value="Low"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element> 
+           <xs:element name="user_group" type="xs:string"/>
+           <xs:element name="fictional_name" type="xs:string"/>
+           <xs:element name="age" type="xs:nonNegativeInteger"/>
+             <xs:element name="sex">
+                 <xs:simpleType>
+                     <xs:restriction base="xs:string">
+                         <xs:enumeration value="Female"/>
+                         <xs:enumeration value="Male"/>
+                     </xs:restriction>
+                 </xs:simpleType>
+             </xs:element> 
+           <xs:element name="photo" type="xs:anyURI"/> 
+           
+           
+           <!-- biography -->
+           <xs:element name="marital_status" type="xs:string"/>
+           <xs:element name="family_status" type="xs:string"/>
+           <xs:element name="education" type="xs:string"/>
+           <xs:element name="personality" type="xs:string"/>
+           <xs:element name="hobbies" type="xs:string"/>
+           <xs:element name="personal_goals" type="xs:string"/>
+          
+    
+            <!-- professional_status -->
+           <xs:element name="job_title" type="xs:string"/>
+           <xs:element name="work_experience" type="xs:string"/>
+           <xs:element name="current_work" type="xs:string"/>
+           <xs:element name="tasks_responsabilities" type="xs:string"/>
+           <xs:element name="professional_goals" type="xs:string"/>
+    
+           <!-- health -->
+           <xs:element name="health" type="xs:string"/>
+           
+           <!-- technology -->
+           <xs:element name="technology" type="xs:string"/>
+       
+    
+           <!-- user_needs -->
+           <xs:element name="user_needs" type="xs:string"/> 
+    
+    
+    <!-- END Persona -->
+    
+    
+    
+
+    
+    
+             
+         <!-- START Scenario -->
+             
+             <xs:element name="scenario" type="scenario_Type"/>
+             
+             
+             <!-- Definition of complex elements -->
+             
+            <xs:complexType name="scenario_Type">
+                 <xs:sequence>
+                     <xs:group ref="generalMethod_Type"/>
+                     <xs:element ref="scenario_description"/>
+                 </xs:sequence>
+             </xs:complexType>
+    
+            <!-- Definition of simple elements -->
+    
+            <xs:element name="scenario_description" type="xs:string"/>
+    
+        <!-- END Scenario -->
+    
+    
+    
+    
+    
+    
+    
+    
+          <!-- START Sketch -->
+             
+             <xs:element name="sketch" type="sketch_Type"/>
+             
+             
+             <!-- Definition of complex elements -->
+             
+            <xs:complexType name="sketch_Type">
+                 <xs:sequence>
+                     <xs:group ref="generalMethod_Type"/>
+                     
+                 </xs:sequence>
+             </xs:complexType>          
+             
+           <!-- START Sketch -->
+    
+    
+    
+    
+    
+    
+    
+         <!-- START Think-aloud evaluation -->
+    
+             <xs:element name="thinkAloudEv" type="thinkAloudEv_Type"/>
+             
+            
+             <!-- Definition of complex elements -->
+             
+             <xs:complexType name="thinkAloudEv_Type">
+                 <xs:sequence>
+                     <xs:group ref="evaluationPhase_Type"/>
+                     
+                 </xs:sequence>
+             </xs:complexType>
+    
+    
+          <!-- END Think-aloud evaluation -->
+    
+    
+    
+    
+    
+    
+    
+            <!-- START Observation -->
+            
+                <xs:element name="observation" type="observation_Type"/>
+                
+                
+                <!-- Definition of complex elements -->
+                
+                <xs:complexType name="observation_Type">
+                    <xs:sequence>
+                        <xs:group ref="generalMethod_Type"/>
+                        <xs:group ref="intSurObs_Type"/>
+                    </xs:sequence>
+                </xs:complexType>
+
+    
+            <!-- END Observation -->
+    
+    
+    
+    
+    
+                
+                <!-- START Interview -->
+                
+                <xs:element name="interview" type="interview_Type"/>
+                
+                
+                <!-- Definition of complex elements -->
+                
+                <xs:complexType name="interview_Type">
+                    <xs:sequence>
+                        <xs:group ref="generalMethod_Type"/>
+                        <xs:group ref="intSurObs_Type"/>
+                        <xs:element ref="questions"/>
+                    </xs:sequence>
+                </xs:complexType>
+    
+                <!-- Definition of simple elements -->
+                <xs:element name="questions" type="xs:anyURI"/>               
+                
+                <!-- END Interview -->
+             
+   
+    
+    
+    
+                     <!-- START Survey -->
+                    
+                    <xs:element name="survey" type="survey_Type"/>
+                    
+                    
+                    <!-- Definition of complex elements -->
+                    
+                    <xs:complexType name="survey_Type">
+                        <xs:sequence>
+                            <xs:group ref="generalMethod_Type"/>
+                            <xs:group ref="intSurObs_Type"/>
+                            <xs:element ref="questions"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    
+                    
+                    <!-- END Survey -->
+    
+    
+    
+    
+                    <!-- START Storyboard -->
+                     
+                    <xs:element name="storyboard" type="storyboard_Type"/>
+                     
+                     
+                     <!-- Definition of complex elements -->
+                     
+                    <xs:complexType name="storyboard_Type">
+                         <xs:sequence>
+                             <xs:group ref="generalMethod_Type"/>
+                             
+                         </xs:sequence>
+                     </xs:complexType>          
+                     
+                    <!-- END Storyboard -->
+    
+    
+    
+    
+    
+                      <!-- START Medium/High-fidelity prototype -->
+                      
+                      <xs:element name="mhfidelity" type="mhfidelity_Type"/>
+                      
+                      
+                      <!-- Definition of complex elements -->
+                      
+                      <xs:complexType name="mhfidelity_Type">
+                          <xs:sequence>
+                              <xs:group ref="generalMethod_Type"/>
+                              <xs:element name="fidelity_level"/>
+                              
+                          </xs:sequence>
+                      </xs:complexType>  
+    
+    
+                    <xs:element name="fidelity_level">
+                         <xs:simpleType>
+                             <xs:restriction base="xs:string">
+                                 <xs:enumeration value="Medium"/>
+                                 <xs:enumeration value="High"/>
+                             </xs:restriction>
+                         </xs:simpleType>
+                     </xs:element> 
+    
+                      
+                    <!-- END Medium/High-fidelity prototype -->
+    
+    
+    
+                     <!-- START Accessibility WCAG -->
+                     
+                    <xs:element name="accessibilityWCAG" type="accessibilityWCAG_Type"/>
+                     
+                     
+                     <!-- Definition of complex elements -->
+                     
+                        <xs:complexType name="accessibilityWCAG_Type">
+                         <xs:sequence>
+                             <xs:group ref="generalMethod_Type"/>
+                             <xs:element ref="objective"/>
+                             <xs:element ref="prototype" maxOccurs="unbounded"/>
+                             <xs:element ref="wcag_principles" />
+                             <xs:element ref="recommendations"/>
+                         </xs:sequence>
+                     </xs:complexType> 
+            
+                            <xs:element name="wcag_principles">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="principle" minOccurs="4" maxOccurs="4"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+    
+                            
+                              
+                            <xs:element name="principle">
+                                  <xs:complexType>
+                                      <xs:sequence>
+                                          <xs:element ref="principle_name"/>
+                                          <xs:element ref="guidelines_properties" minOccurs="1" maxOccurs="4"/>
+                                      </xs:sequence>
+                                  </xs:complexType>
+                              </xs:element>
+                          
+                            <xs:element name="principle_name">
+                              <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                      <xs:enumeration value="Perceivable"/>
+                                      <xs:enumeration value="Operable"/>
+                                      <xs:enumeration value="Understandable"/>
+                                      <xs:enumeration value="Robust"/>
+                                  </xs:restriction>
+                              </xs:simpleType>
+                          </xs:element> 
+    
+                           <xs:element name="guidelines_properties">
+                               <xs:complexType>
+                                 <xs:sequence>
+                                     <xs:element ref="guideline"/>
+                                     <xs:element ref="checker"/> 
+                                     <xs:element ref="comments"/> 
+                                 </xs:sequence>
+                                </xs:complexType>
+                             </xs:element>
+    
+    
+                        <xs:element name="guideline">
+                              <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                      <!-- Perceivable -->
+                                      <xs:enumeration value="Provide text alternatives for non-text content."/>
+                                      <xs:enumeration value="Provide captions and other alternatives for multimedia."/>
+                                      <xs:enumeration value="Create content that can be presented in different ways,
+                                          including by assistive technologies, without losing meaning."/>
+                                      <xs:enumeration value="Make it easier for users to see and hear content."/>
+                                      
+                                      <!-- Operable -->
+                                      <xs:enumeration value="Make all functionality available from a keyboard."/>
+                                      <xs:enumeration value="Give users enough time to read and use content."/>
+                                      <xs:enumeration value="Do not use content that causes seizures."/>
+                                      <xs:enumeration value="Help users navigate and find content."/>
+                                      
+                                      <!-- Understandable -->
+                                      <xs:enumeration value="Make text readable and understandable."/>
+                                      <xs:enumeration value="Make content appear and operate in predictable ways."/>
+                                      <xs:enumeration value="Help users avoid and correct mistakes."/>
+                                      
+                                      <!-- Robust -->
+                                      <xs:enumeration value="Maximize compatibility with current and future user tools."/>
+                                  </xs:restriction>
+                              </xs:simpleType>
+                          </xs:element> 
+    
+                        <!-- Definition of simple elements -->
+                        
+                        
+                        <!-- guideline -->
+                        <xs:element name="checker" type="xs:boolean"/>
+                        <xs:element name="comments" type="xs:string"/>
+
+                     
+                     <!-- END Accessibility WCAG -->
+
+    
+  
+</xs:schema>
+

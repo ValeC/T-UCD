@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:include schemaLocation="generalMethod_Type.xsd"/>
+    
+    <xs:element name="persona" type="personaType"/>
+    
+    <!-- Persona -->
+    <!-- Definition of complex elements -->
+    
+    <xs:complexType name="personaType">
+                <xs:sequence>
+                    <xs:group ref="generalMethod_Type"/>
+                    <xs:element ref="general_info"/>
+                    <xs:element ref="biography"/>
+                    <xs:element ref="health"/>
+                    <xs:element ref="technology"/>
+                </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="general_info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="user_group"/>
+                <xs:element ref="fictional_name"/>
+                <xs:element ref="age"/>
+                <xs:element ref="photo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="biography">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="marital_status"/>
+                <xs:element ref="family_status"/>
+                <xs:element ref="education"/>
+                <xs:element ref="personality"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definition of simple elements -->
+    
+
+    <!-- general_info -->
+    <xs:element name="user_group" type="xs:string"/>
+    <xs:element name="fictional_name" type="xs:string"/>
+    <xs:element name="age" type="xs:nonNegativeInteger"/>
+    <xs:element name="photo" type="xs:anyURI"/> 
+
+    <!-- biography -->
+    <xs:element name="marital_status" type="xs:string"/>
+    <xs:element name="family_status" type="xs:string"/>
+    <xs:element name="education" type="xs:string"/>
+    <xs:element name="personality" type="xs:string"/>
+
+    <!-- health -->
+    <xs:element name="health" type="xs:string"/>
+
+    <!-- technology -->
+    <xs:element name="technology" type="xs:string"/>    
+    
+   
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:include schemaLocation="evaluationPhase_Type.xsd"/>
+    
+   <xs:element name="thinkAloudEv" type="thinkAloudEv_Type"/>
+   
+    <!-- Think-aloud evaluation -->
+    <!-- Definition of complex elements -->
+    
+    <xs:complexType name="thinkAloudEv_Type">
+        <xs:sequence>
+            <xs:group ref="evaluationPhase_Type"/>
+            
+        </xs:sequence>
+    </xs:complexType>
+         
+</xs:schema>

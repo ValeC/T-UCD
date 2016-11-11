@@ -1,0 +1,121 @@
+<div class="personaField" style="display: none;">
+							<h2>Persona</h2>
+							<!-- SHOW PREVIOUS PERSONAS -->
+				        <table class="personaList" style="display: none;">
+				          <tr>
+				          <button class="personaShowList">Show Previous Personas</button>
+
+				          	<script>
+											$(document).ready(function(){
+											  $(".personaShowList").click(function(){
+											  	$(".personaList").fadeIn(400);
+											  });
+											});
+										</script>	
+
+				            <td><strong>User group</strong></td>
+				            <td><strong>Age</strong></td>
+				            <td><strong>Creator</strong></td>
+				          </tr>
+
+				          <tr ng-model="personas" ng-repeat='persona in personas'>
+
+				            <td ng-class=""><a ng-click="SelectPersona(persona)" href="">edit</a> {{persona.user_group}}</td>
+				            <td>{{persona.age}}</td>
+				             <td>{{persona.creator_name}}</a></td>
+				          </tr>
+				        </table>
+							<button ng-click="NewPersona()">New</button>
+		        	<button ng-click="AddPersona()" ng-disabled="!canAdd()">Add</button>
+		        	<button ng-click="DeletePersona()" ng-disabled="!canDelete()">Delete</button>
+
+		    			<div >
+
+		    			
+		    		</div>
+		      
+		      <hr />
+
+		      <table>
+		      <form name="persForm">
+		        <div><strong>Pos:</strong><input name="pos" type="text" ng-model="perspos" readonly/></div>
+		        <div><strong>Id:</strong><input name="id" type="text" ng-model="pers.id" readonly/></div>
+		        <tr>
+			        <td>
+			        	<strong>Creator name:</strong>
+			        	<input name="creator_name" type="text" maxlength="200" ng-model="pers.creator_name" required />
+			        </td>
+			        <td>
+			        	<strong>Creation date:</strong>
+			        	<input name="date" type="datetime" ng-model="pers.date" required />
+		        	</td>
+		        </tr>
+		         </table>
+
+		        <!-- FORM, PERSONA: GENERAL INFORMATION -->
+		        <table>
+			        <h3>General information</h3>
+			         <tr>
+						     <td><strong>User group:</strong></td>
+						     <td><input name="user_group" type="text" ng-model="pers.user_group" required/>  </td>
+						     <td><strong>Fictional name:</strong></td>
+						     <td><input name="fictional_name" type="text" ng-model="pers.fictional_name" required /></td>
+							</tr>
+							<tr>
+							    <td><strong>Age:</strong></td>
+							    <td><input name="age" type="number" ng-model="pers.age" required /></td>
+							    <td><strong>Photo:</strong>  </td>
+							   <td> <input name="photo" type="fictional_name" ng-model="pers.photo" />  </td>
+							</tr>
+ 						</table>
+ 						<br/>
+
+ 				<!-- FORM, PERSONA: BIOGRAPHY -->
+						<table>
+							<h3>Biography</h3>
+								<tr>
+								    <td style="height:100px"><strong>Marital status:</strong></td>
+								    <td><textarea name="marital_status" maxlength="2000" rows="5" cols="20" ng-model="pers.marital_status"></textarea></td>
+						       	<td style="height:100px"><strong>Family status:</strong></td>
+						        <td><textarea name="family_status" maxlength="2000" rows="5" cols="20" ng-model="pers.family_status"></textarea></td>
+						    </tr>
+						    <tr>
+							     	<td style="height:100px"><strong>Education:</strong></td>
+							      <td><textarea name="education" maxlength="2000" rows="5" cols="20" ng-model="pers.education"></textarea></td>
+										<td style="height:100px"><strong>Personality:</strong></td>
+										<td><textarea name="personality" maxlength="2000" rows="5" cols="20" ng-model="pers.personality"></textarea></td>
+								</tr>
+						</table>
+
+		        <div style="height:100px"><strong>Goals and tasks:</strong>
+		        	<textarea name="goals_and_tasks" maxlength="2000" rows="5" cols="20" ng-model="pers.goals_and_tasks" required></textarea>
+		        </div>
+		        
+						<!-- FORM, PERSONA: HEALTH -->
+						<table>					
+								<tr>
+									<td><h3>Health</h3></td>
+						        <td><textarea name="health" maxlength="2000" rows="5" cols="20" ng-model="pers.health"></textarea></td>
+
+						        <!-- FORM, PERSONA: TECHNOLOGY -->
+						        <td><h3>Technology</h3></td>
+						        <td><textarea name="technology" maxlength="2000" rows="5" cols="20" ng-model="pers.technology" required></textarea></td>
+						    </tr>
+						</table>
+						
+
+						<!-- FORM, PERSONA: OTHERS -->
+				    <table>		
+				        <h3>Others</h3>
+				       	<tr>
+					         <td style="height:100px"><strong>Attachements:</strong></td>
+					         <td><input name="attachements" type="file" ng-model="pers.attachements" /></td>
+					         <td style="height:100px"><strong>Notes:</strong>
+					         <textarea name="notes" maxlength="2000" rows="5" cols="20" ng-model="pers.notes" /></textarea></td>
+				         </tr>
+				    </table>
+
+		     </form>
+
+		     </div>		
+		     </div>				

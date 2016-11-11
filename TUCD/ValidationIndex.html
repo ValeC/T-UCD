@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Hello Validators</title>
+    <script src="javascripts/guids/math.uuid.js"></script>
+    <script src="javascripts/angular/angular.js"></script>
+    <script src="controllers/ValidatorController.js"></script>
+  </head>
+  <body ng-app="AValidator" ng-controller="DetailController">
+    <h1>A-Mail</h1>
+    <div >
+        <table>
+          <tr>
+            <td><strong>Sender</strong></td>
+            <td><strong>Subject</strong></td>
+            <td><strong>Date</strong></td>
+          </tr>
+          <tr ng-model="messages" ng-repeat='message in messages'>
+            <td ng-class="">{{message.sender}}</td>
+            <td><a ng-click="SelectMessage(message)" href="">{{message.subject}}</a></td>
+            <td>{{message.date}}</td>
+          </tr>
+        </table>
+    </div>
+      <hr />
+      <div>
+      <form name="msgForm">
+        <button ng-click="NewMessage()">New</button>
+        <button ng-click="AddMessage()" ng-disabled="!canAdd()">Add</button>
+        <button ng-click="DeleteMessage()" ng-disabled="!canDelete()">Delete</button>
+        <div><strong>Pos:</strong><input name="pos" type="text" ng-model="msgpos" readonly/></div>
+        <div><strong>Id:</strong><input name="id" type="text" ng-model="msg.id" readonly/></div>
+        <div><strong>Subject:</strong><input name="subject" type="text" maxlength="200" ng-model="msg.subject" required /></div>
+        <div><strong>Sender:</strong><input name="sender" type="email" ng-model="msg.sender" required/></div>
+        <div><strong>Date:</strong><input name="date" type="datetime" ng-model="msg.date" required /></div>
+        <div><strong>To:</strong><input name="recipient" type="email" ng-model="msg.recipients" required /></div>
+        <div style="height:100px"><strong>Message:</strong><textarea name="message" maxlength="2000" rows="5" cols="100" ng-model="msg.message" required /></div>
+      </form>
+     </div>
+  </body>
+
+</html>

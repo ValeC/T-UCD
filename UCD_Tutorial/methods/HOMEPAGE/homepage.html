@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Open Tools 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130803
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Welcome to T-UCD!</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css"/>
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="jquery-ui.css" />
+		<link href="font-awesome-4.0.1/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="pure-min.css" />
+
+		
+		<script type="text/javascript" src="jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="jquery-ui.js"></script>
+		<script type="text/javascript" src="javascripts/guids/math.uuid.js"></script>
+   		<script type="text/javascript" src="javascripts/angular/angular.js"></script>
+   		<script type="text/javascript" src="directives/date.js"></script>
+    	<script type="text/javascript" src="controllers/project.js"></script>
+    	<script type="text/javascript" src="angular.min.js"></script>
+    	
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+		<!--[if IE 6]>
+		<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		 
+		 <!--<script src="script.js"></script>-->
+
+	
+
+		
+	</head>
+
+
+
+	<body ng-app="ProjectsHomepage" ng-controller="DetailControllerProject">
+			<div id="header" class="container">
+				<div id="logo">
+					<h1><a href="#">Welcome to T-UCD!</a></h1>
+					
+					</div>
+				<div class="tutorialButtonContainer"> <a type="submit" class="pure-button pure-button-primary tutorialButton" href="../UCD_Tutorial/methods1.xml">UCD Tutorial</a></div>
+			</div>
+
+		
+
+		<div id="page" class="container">
+
+
+			<div id="sidebar">
+				<h1><i class="fa fa-files-o fa-2x"></i> Projects</h1>
+
+				<div id="sbox1" style="overflow: auto;">
+					<form class="pure-form">
+						<input  type="text" ng-model="search" class="pure-input-rounded" placeholder="Search"></br></br>
+					</form>
+					<table class="pure-table pure-table-horizontal" ng-model="projects" ng-repeat='project in projects | filter:search'>
+						<tbody>
+       						<tr>
+       						 	<td class="col_A">
+       						 		<i class="fa fa-file-o fa-2x"></i> 
+       						 	</td>
+       						 	<td>
+       						 		<a style="text-decoration: none;" href="" ng-click="go(project._id.$oid)"> <strong>{{project.project_name}} </strong></a> </br>
+       						 		
+       						 	</td>
+       						 	<td class="col_B">
+									<i> {{project.customer}}</i>
+       						 	</td>
+
+					            <td class="col_C">
+					            	<a class="pure-button" style="padding:0.5em 0.7em;" ng-click="deleteDialog(project)">  
+							 			<i class="fa fa-trash-o fa-lg"></i>
+							 		</a>
+					            	<a class="pure-button" style="padding:0.5em 0.7em;" ng-click="UpdateProject(project)">
+							 			<i class="fa fa-pencil fa-lg"></i>
+							 		</a>
+							 	
+					            	
+							 	</td>
+					            
+					        </tr>
+					    </tbody>
+
+							 
+					</table> 
+
+						 <div id="dialog-confirm" title="Delete project" style="display: none;">
+							<div>
+								Are you sure to delete this project?
+							</div>
+						</div>
+						<div id="dialog-ok-delete" title="Project deleted!" style="display: none;">
+							<div>
+								Project successfully deleted!
+							</div>
+						</div>
+
+						<!--<div id="dialog-delete-error" title="Project delete error!" style="display: none;">
+							<div>
+								Project not deleted...
+							</div>
+						</div>-->
+
+					</div>
+
+					
+				</div>
+
+
+		
+
+		<div id="content">
+
+
+			<div id="onecolumn">
+
+				<div id="tabs">
+					<h1><i class="fa fa-file-o fa-2x"></i>
+						</i> {{titleText}}</h1>
+
+						<form name="projForm" class="pure-form pure-form-aligned">
+						    <fieldset>
+						        <div class="pure-control-group">
+						            <label for="project_name">Project name*</label>
+						            <input id="project_name" class="pure-input-2-3" type="text" ng-model="proj.project_name" required>
+						        </div>
+
+						        <div class="pure-control-group">
+						            <label for="description">Description</label>
+						            <textarea class="area pure-input-2-3" type="text" id="description" name="description" rows="6" ng-model="proj.description"></textarea>
+						            
+						        </div>
+
+						        <div class="pure-control-group">
+						            <label for="customer">Customer</label>
+						            <input id="customer" class="pure-input-2-3" type="text" ng-model="proj.customer">
+						        </div>
+
+						        <div class="pure-control-group">
+						            <label for="project_members">Project members</label>
+						            <textarea class="area pure-input-2-3" id="projectMembers" name="projectMembers" rows="6" type="text" class="pure-input-2-3" ng-model="proj.project_members"></textarea>
+						            
+						        </div>
+
+						        <div class="pure-control-group">
+						            <label for="start">Start</label>
+						            <input ui-date="dateOptions" ui-date-format="dd.mm.yy" id="start"  type="text" ng-model="proj.start_date">
+						        </div>
+
+						         <div class="pure-control-group">
+									<label for="end">End</label>
+						            <input ui-date="dateOptions" ui-date-format="dd.mm.yy" id="end" type="text" ng-model="proj.end_date">
+						        </div>
+
+						        <div >
+						        	<button class="pure-button" ng-click="NewProject()">Reset</button>
+						            <button type="submit" class="pure-button pure-button-primary" ng-click="NewOrUpdateProject()">{{buttonText}}</button>
+						        </div>
+
+						    </fieldset>
+						</form>
+
+
+		
+
+
+
+			</div>
+	</div>
+			
+		
+	</div>
+	<!--<div id="copyright" class="container">
+		<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+	</div>-->
+	</body>
+	</html>

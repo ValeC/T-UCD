@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Open Tools 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130803
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>UCD web app</title>
+	    <script src="javascripts/guids/math.uuid.js"></script>
+	    <script src="javascripts/angular/angular.js"></script>
+	    <script src="controllers/ValidatorController.js"></script>
+	    <script src="controllers/ValidatorControllerThinkAloudEvaluation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--<title>UCD web app</title>-->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="jquery-ui.css" />
+		<script src="jquery-1.9.1.js"></script>
+		<script src="jquery-ui.js"></script>
+		<!--<script src="jquery.min.js"></script>-->
+		<link rel="stylesheet" href="/resources/demos/style.css" />
+		<!--[if IE 6]>
+		<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+		</script>
+	</head>
+
+
+	<body ng-app="AValidator" ng-controller = "DetailController" ng-controller ="DetailControllerThinkAloudEv">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">UCD web app</a></h1>
+			</div>
+			
+		</div>
+
+		<div id="page" class="container">
+
+					Project  &nbsp;&nbsp; 
+						<select>
+						  <option value="none"></option>
+						  <option class="project1">project1</option>
+						  <option class="project2">project2</option>
+						  <option class="project3">project3</option>
+						  <option class="project4">project4</option>
+						  <option class="project5">project5</option>
+						</select>
+						<br /><br />
+						
+				<!-- SIDEBAR -->
+				<div id="sidebar">
+					<div id="sbox1">
+						<script>
+								$(document).ready(function(){
+								  $(".project1").click(function(){
+								  	$(".project1").fadeIn(400);
+								  });
+								});
+							</script>
+							
+							<div class="project1" style="display: none;">
+								<br />
+								<ul>
+									<li>Interview</li>
+									<li>Online survey</li>
+									<li>Persona 1</li>
+									<li>Storyboard</li>
+									<li>Scenario 1</li>
+									<li>Persona 2</li>
+									<li>Prototype A</li>
+									<li>Prototype B</li>
+									<li>Heuristic evaluation</li>
+									<li>User evaluation</li>
+									<li>Task analysis</li>
+									<li>Scenario 2</li>
+									<li>Prototype A corr</li>
+									<li>User evaluation</li>
+								</ul>
+							</div>
+					</div>
+			</div>
+
+
+			<div id="content">
+				<div id="onecolumn">
+
+					<!-- TABS WITH METHODS -->
+					<div id="tabs">
+						<ul>
+							<li>
+								<a href="#tabs-1">User Research</a>
+							</li>
+							<li>
+								<a href="#tabs-2">Prototyping</a>
+							</li>
+							<li>
+								<a href="#tabs-3">Evaluation</a>
+							</li>
+							<li>
+								<a href="#tabs-4">Implementation</a>
+							</li>
+						</ul>
+
+
+					<!-- TABS WITH BUTTON of METHODS -->
+
+					<!--TAB 1: USER RESEARCH -->
+					<div id="tabs-1">
+
+							<!-- PERSONA -->
+							<button class="personaButton" ng-click="showPersona=true" ></button>	
+
+							 <!--<script>
+								$(document).ready(function(){
+								  $(".personaButton").click(function(){
+								  	$(".personaField").fadeIn(400);
+								  	//$(".personaField").fadeOut(400);
+								  });
+								});
+							</script>-->
+
+							<!-- OBSERVATION -->
+							<button class="observationButton"></button>
+
+							<script>
+								$(document).ready(function(){
+								  $(".observationButton").click(function(){
+								  	$(".observationField").fadeIn(400);
+								  });
+								});
+							</script>		
+					</div>
+
+					<!--TAB 2: PROTOTYPING -->
+					<div id="tabs-2">
+						
+					</div>
+
+					<!--TAB 3: EVALUATION -->
+					<div id="tabs-3">
+						<button class="thinkAloudButton">Think Aloud Evaluation</button>	
+
+							 <script>
+								$(document).ready(function(){
+								  $(".thinkAloudButton").click(function(){
+								  	$(".thinkAloudField").fadeIn(400);
+								  });
+								});
+							</script>
+					</div>
+
+					<!--TAB 2: IMPLEMENTATION -->
+					<div id="tabs-4">
+						<p>
+							Morbi tincidunt, dui sit amet facilisis feugiat,  
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="two-column">
+				<div class="box-content">
+
+					<!-- WORKSPACE -->	
+
+						<!-- PERSONA -->
+						<div ng-include="'persona.html'" ng-show="showPersona" width="700" height="1000"></div>
+						<!--<iframe class="personaField" style="display: none;" ng-include src="persona.html" ng-controller = "DetailController" width="700" height="1000" ></iframe>-->
+		     										     
+								 
+					</div>
+				</div>
+			</div>
+			
+
+			
+		<!--<div id="footer" class="container">
+			
+
+		<div id="copyright" class="container">
+			<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+		</div>-->
+	</body>
+</html>

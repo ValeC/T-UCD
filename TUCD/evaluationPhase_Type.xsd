@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:include schemaLocation="generalMethod_Type.xsd"/>
+    
+    
+    
+    <!-- Definition of complex elements -->
+    
+    <xs:group name="evaluationPhase_Type">
+        <xs:sequence>
+            <xs:group ref="generalMethod_Type"/>
+            <xs:element ref="evaluation_description"/>
+            <xs:element ref="results"/> 
+        </xs:sequence>
+    </xs:group>
+    
+    <!-- Definition of complex elements -->
+    
+    <xs:element name="evaluation_description">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="users" maxOccurs="unbounded"/>
+                <xs:element ref="goal" maxOccurs="unbounded"/>
+                <xs:element ref="condition" maxOccurs="unbounded"/>
+                <xs:element ref="user_task" maxOccurs="unbounded"/>
+                <xs:element ref="prototype" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="users">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="number"/>
+                <xs:element ref="group"/>               
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="condition">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="where"/>
+                <xs:element ref="how"/>
+                <xs:element ref="material"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="prototype">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="prototype_name"/>
+                <xs:element ref="attachments"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="results">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="analysis"/>
+                <xs:element ref="attachments"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!-- Definition of simple elements -->
+    
+    <!-- Users -->
+      <xs:element name="number" type="xs:positiveInteger" />
+    <xs:element name="group" type="xs:string" />
+    
+    <!-- Goal -->
+    <xs:element name="goal" type="xs:string" />
+    
+    <!-- Condition -->
+    
+    <xs:element name="where" type="xs:string"/>
+    <xs:element name="how" type="xs:string"/>
+    <xs:element name="material" type="xs:string"/>
+    
+    <!-- User task -->
+    <xs:element name="user_task" type="xs:string"/>
+    
+    <!-- Prototype -->
+   <xs:element name="prototype_name" type="xs:string"/>
+    
+    <!-- Results -->
+    <xs:element name="analysis" type="xs:string"/> 
+    
+    
+</xs:schema>
+

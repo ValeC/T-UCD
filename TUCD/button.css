@@ -1,0 +1,75 @@
+a{
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.a-btn{
+    padding: 8px 13px 8px 13px;
+    position: absolute;
+    float:left;
+    display: block;
+    background: linear-gradient(top, gray 0%,gray 100%);
+    border: 1px solid gray;
+    border-color: gray;
+    box-shadow:
+        0 3px 3px gray,
+        0 1px 0 gray inset; 
+    transition: all 0.2s linear;
+}
+
+.a-btn-text{
+    font-size: 15px;
+    color: black;
+    line-height: 16px;
+    display: block;
+}
+
+.a-btn:hover{
+    /*transform: scale(1.05);*/
+    background-color: gray;
+}
+
+
+.a-btn:active{
+   background-color:red;
+}
+
+
+
+.actionMethod{
+    float: right;
+	width: 25%;
+	margin: 20px;
+}
+
+.actionButtons{
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.3em 0.7em 0.3em;
+    color: #080808; /* rgba not supported (IE 8) */
+    /* color: rgba(0, 0, 0, 0.80); rgba supported */
+    /* *color: #444; IE 6 & 7 */
+    border: 0px solid #a6a6a6; /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0); /*IE9 + everything else*/
+    background-color: #b5b5b5;
+    text-decoration: none;    
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0 2px 2px gray;
+               
+    
+}
+
+.pure-button-disabled{
+    background-color: gray;
+    cursor: not-allowed;
+      filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+     border: none;
+}
+
+.actionButtons:hover{
+     background-color: gray;
+  }  
